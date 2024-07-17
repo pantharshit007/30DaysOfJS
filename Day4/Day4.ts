@@ -83,3 +83,5 @@ function task8and9() {
   }
 }
 task8and9();
+
+export {};

@@ -1,5 +1,6 @@
 "use strict";
 // Day4: https://courses.chaicode.com/learn/home/30-days-of-Javascript-challenge/30-days-javascript-challenge/section/515627/lesson/3197093
+Object.defineProperty(exports, "__esModule", { value: true });
 function task1() {
     for (let i = 1; i <= 10; i++) {
         console.log(i);

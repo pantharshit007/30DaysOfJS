@@ -1,5 +1,6 @@
 "use strict";
 // Day 3: https://courses.chaicode.com/learn/home/30-days-of-Javascript-challenge/30-days-javascript-challenge/section/515627/lesson/3197081
+Object.defineProperty(exports, "__esModule", { value: true });
 function task1(num) {
     if (num === 0)
         console.log("Zero: " + num);

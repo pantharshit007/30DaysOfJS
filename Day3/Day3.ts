@@ -106,3 +106,5 @@ function task7(year: number) {
 }
 task7(2000);
 task7(1900);
+
+export {};
