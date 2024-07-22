@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="Day10.js" defer></script>
+    <style>
+      .imgOpacity {
+        opacity: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p class="task1">random paragraph</p>
+      <button onclick="task1click()">task 1</button>
+      <br />
+      <br />
+      <img
+        src="https://i.pinimg.com/474x/90/b2/26/90b2269af1818e96cad577fba33595c1.jpg"
+        style="width: 140px; padding: 8px"
+        class="task2"
+      />
+    </div>
+
+    task 5:
+    <input type="text" name="" id="task5" placeholder="Type something..." />
+    <br />
+
+    task 6:
+    <input type="text" name="" id="task6" placeholder="Type something..." />
+    <p id="display"></p>
+
+    <br />
+
+    <div>
+      <form id="form">
+        name: <input type="text" name="firstName" id="fname" /> age:
+        <input type="text" name="age" id="age" /> <br /><br />
+        <button type="submit">Submit</button>
+      </form>
+      <br />
+      <select name="task7" id="task8">
+        <option value="option 1">option 1</option>
+        <option value="option 2">option 2</option>
+        <option value="option 3">option 3</option>
+      </select>
+      <p class="display2"></p>
+    </div>
+
+    <ul class="unordered-list">
+      <li id="list">list 1</li>
+      <li id="list">list 2</li>
+      <li id="list">list 3</li>
+    </ul>
+    <p class="display3"></p>
+
+    <div class="parent">
+      <button onclick="addnewparagraph()" ondblclick="doubleclick()">
+        Add new child
+      </button>
+      <p>Already exists.</p>
+    </div>
+  </body>
+</html>
