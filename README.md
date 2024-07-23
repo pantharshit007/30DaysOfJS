@@ -15,7 +15,7 @@ Welcome to the 30 Days of JavaScript challenge! Each day, we'll tackle a new top
 - [Day 7: Objects](Day7/Day7.ts)
 - [Day 8: ES6+ Features](Day8/Day8.ts)
 - [Day 9: DOM Manipulation](Day9/Day9.js)
-- [Day 10: Event Handling](Day10/Day10.ts)
+- [Day 10: Event Handling](Day10/Day10.js)
 - [Day 11: Promises And Async/Await](Day11/Day11.ts)
 - [Day 12: Error Handling](Day12/Day12.ts)
 - [Day 13: Regular Expressions](Day13/Day13.ts)
