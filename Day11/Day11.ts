@@ -134,3 +134,5 @@ function task9() {
     .catch((err) => console.log("task9 Failed:", err));
 }
 task9();
+
+export {};
