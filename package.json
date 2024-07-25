@@ -1,0 +1,23 @@
+{
+  "name": "30daysofjs",
+  "version": "1.0.0",
+  "description": "Welcome to the 30 Days of JavaScript challenge! Each day, we'll tackle a new topic to enhance our JavaScript skills.",
+  "source": "Day13/Day13.ts",
+  "main": "dist/Day13/Day13.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "axios": "^1.7.2",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.7",
+    "parcel": "^2.12.0"
+  }
+}
