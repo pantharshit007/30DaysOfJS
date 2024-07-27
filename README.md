@@ -16,11 +16,11 @@ Welcome to the 30 Days of JavaScript challenge! Each day, we'll tackle a new top
 - [Day 8: ES6+ Features](Day8/Day8.ts)
 - [Day 9: DOM Manipulation](Day9/Day9.js)
 - [Day 10: Event Handling](Day10/Day10.js)
-- [Day 11: Promises And Async/Await](Day11/Day11.ts)
+- [Day 11: Promises And Async/Await](Day11/Day11.ts) ✨
 - [Day 12: Error Handling](Day12/Day12.ts)
 - [Day 13: Modules](Day13/Day13.ts)
-- [Day 14: Classes](Day14/Day14.ts)
-- [Day 15: Closures](Day15/Day15.ts)
+- [Day 14: Classes](Day14/Day14.ts) ✨
+- [Day 15: Closures](Day15/Day15.ts) ✨🚀
 - [Day 16: Recursion](Day16/Day16.ts)
 - [Day 17: Data Structures](Day17/Day17.ts)
 - [Day 18: Algorithms](Day18/Day18.ts)
