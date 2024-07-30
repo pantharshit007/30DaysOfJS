@@ -161,3 +161,5 @@ function task10(node: TreeNode | null): number {
 }
 
 console.log("> task10: Depth of the tree:", task10(root));
+
+export {};

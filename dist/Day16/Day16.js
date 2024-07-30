@@ -1,5 +1,6 @@
 "use strict";
 // Day 16: https://courses.chaicode.com/learn/home/30-days-of-Javascript-challenge/30-days-javascript-challenge/section/515627/lesson/3197418
+Object.defineProperty(exports, "__esModule", { value: true });
 // Activity 1: Basic Recursion
 // • Task 1: Write a recursive function to calculate the factorial of a number. Log the result for a few test cases.
 // • Task 2: Write a recursive function to calculate the nth Fibonacci number. Log the result for a few test cases.
