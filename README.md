@@ -1,6 +1,6 @@
-# 30 Days of JavaScript
+<h1 align="center">30 Days of JavaScript/TypeScript</h1>
 
-Welcome to the 30 Days of JavaScript challenge! Each day, we'll tackle a new topic to enhance our JavaScript skills.
+Welcome to the 30 Days of JavaScript/TypeScript challenge! Each day, we'll tackle a new topic to enhance our JavaScript/TypeScript skills.
 
 ## Table of Contents
 
@@ -23,7 +23,7 @@ Welcome to the 30 Days of JavaScript challenge! Each day, we'll tackle a new top
 - [Day 15: Closures](Day15/Day15.ts) ✨🚀
 - [Day 16: Recursion](Day16/Day16.ts) ✨🚀
 - [Day 17: Data Structures](Day17/Day17.ts) ✨📝
-- [Day 18: Algorithms](Day18/Day18.ts)
+- [Day 18: Algorithms](Day18/Day18.ts) 📝
 - [Day 19: Regular Expressions](Day19/Day19.ts)
 - [Day 20: LocalStorage and SessionStorage](Day20/Day20.ts)
 - [Day 21: LeetCode Easy](Day21/Day21.ts)
@@ -39,4 +39,15 @@ Welcome to the 30 Days of JavaScript challenge! Each day, we'll tackle a new top
 
 ## How to Use
 
-Each day, click on the link to the corresponding JavaScript file to access the day's content. Happy coding!
+Each day, click on the link to the corresponding TypeScript file to access the day's content. Happy coding!
+
+<details>
+<summary>Annotation</summary>
+
+- ✨: कठिनाई
+
+- 🚀: कितने पानी में है
+
+- 📝 : काम छोड़ा गया है
+
+</details>
