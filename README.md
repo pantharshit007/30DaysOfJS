@@ -28,7 +28,7 @@ Welcome to the 30 Days of JavaScript/TypeScript challenge! Each day, we'll tackl
 - [Day 20: LocalStorage and SessionStorage](Day20/Day20.js)
 - [Day 21: LeetCode Easy](Day21/Day21.ts) 📝
 - [Day 22: LeetCode Medium](Day22/Day22.ts) 📝
-- [Day 23: LeetCode Hard](Day23/Day23.ts)
+- [Day 23: LeetCode Hard](Day23/Day23.ts) 📝
 - [Day 24: Project 1 - Weather App](Day24/Day24.ts)
 - [Day 25: Project 2 - Movie Search App](Day25/Day25.ts)
 - [Day 26: Project 3 - Chat Application](Day26/Day26.ts)
