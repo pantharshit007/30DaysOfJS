@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="Day24.js" type="module" defer></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Weather App</h1>
+
+      <div class="tab-container">
+        <p class="tab">Search Weather <span>|| better <a href="https://weather-app707.netlify.app/">here </a></span></p>
+        
+      </div>
+
+      <!-- Search Form -->
+      <form class="form-container" data-searchForm>
+        <input type="text" placeholder="Search city..." data-searchInput />
+        <button class="btn" type="submit">
+          <img
+            src="./img/search.png"
+            alt="search image"
+            width="20"
+            height="20"
+            loading="lazy"
+          />
+        </button>
+      </form>
+
+      <div class="sub-container user-info">
+        <!-- city Name -->
+        <div class="name">
+          <p data-cityName></p>
+          <img data-countryIcon />
+        </div>
+
+        <!-- Weather description -->
+        <p data-weatherDesc></p>
+
+        <!-- weather Img -->
+        <img data-weatherIcon />
+
+        <!-- temperature -->
+        <p data-temp></p>
+
+        <!-- 3x Information Card -->
+        <div class="parameter-container">
+          <!-- card 1 -->
+          <div class="parameter">
+            <img src="./img/wind.png" alt="" />
+            <p>WINDSPEEDS</p>
+            <p data-speed></p>
+          </div>
+
+          <!-- card 2 -->
+          <div class="parameter">
+            <img src="./img/humidity.png" alt="" />
+            <p>HUMIDITY</p>
+            <p data-humidity></p>
+          </div>
+
+          <!-- card 3 -->
+          <div class="parameter">
+            <img src="./img/cloud.png" alt="" />
+            <p>CLOUDS</p>
+            <p data-cloudiness></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
