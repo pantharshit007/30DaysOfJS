@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(0, 138, 255);
+    background-color: linear-gradient(45deg, rgba(0, 138, 255, 1) 29%, rgba(54, 173, 239, 1) 55%, rgba(110, 40, 222, 1) 87%);
+
+    /* overflow-x: hidden; */
+}
+
+h1,
+.form {
+    color: #fff;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 0.5em;
+}
+
+#search-input,
+#search-button {
+    padding: 0.3rem 0.5em;
+    border-radius: 2rem;
+}
+
+#results-container {
+    background-color: rgb(163, 208, 247);
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+    padding: 2rem 3rem;
+}
+
+.movie {
+    margin: 0 auto;
+}
+
+.more-info-button,
+.close-button {
+    padding: 0.3rem 0.5em;
+    border-radius: 0.2rem;
+    background-color: rgb(30, 152, 239);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+#movie-modal {
+    border-radius: .6rem;
+    background-color: rgb(49, 97, 240);
+    color: #fff;
+}

@@ -30,12 +30,12 @@ Welcome to the 30 Days of JavaScript/TypeScript challenge! Each day, we'll tackl
 - [Day 22: LeetCode Medium](Day22/Day22.ts) 📝
 - [Day 23: LeetCode Hard](Day23/Day23.ts) 📝
 - [Day 24: Project 1 - Weather App](Day24/Day24.js)
-- [Day 25: Project 2 - Movie Search App](Day25/Day25.ts)
-- [Day 26: Project 3 - Chat Application](Day26/Day26.ts)
-- [Day 27: Project 4 - Task Management App](Day27/Day27.ts)
-- [Day 28: Project 5 - E-commerce Website](Day28/Day28.ts)
-- [Day 29: Project 6 - Social Media Dashboard](Day29/Day29.ts)
-- [Day 30: Final - Social Media Dashboard with Full Features](Day30/Day30.ts)
+- [Day 25: Project 2 - Movie Search App](Day25/Day25.js)
+- [Day 26: Project 3 - Chat Application](Day26/Day26.js)
+- [Day 27: Project 4 - Task Management App](Day27/Day27.js)
+- [Day 28: Project 5 - E-commerce Website](Day28/Day28.js)
+- [Day 29: Project 6 - Social Media Dashboard](Day29/Day29.js)
+- [Day 30: Final - Social Media Dashboard with Full Features](Day30/Day30.js)
 
 ## How to Use
 
