@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="Day26.js" defer></script>
+    <title>Chat App - 26</title>
+  </head>
+  <body>
+    <!-- <h1>WebSocket Test</h1> -->
+
+    <div class="wrapper">
+      <div class="chat-header">
+        <h2>Chat Room</h2>
+        <span id="username-display">Logged in as: </span>
+        <br />
+        <!-- Message box -->
+        <ul id="chat-box"></ul>
+      </div>
+      <form id="form">
+        <input
+          type="text"
+          id="messageInput"
+          placeholder="Type a message"
+          autofocus
+        />
+        <button type="submit">Send</button>
+        <div id="messages"></div>
+      </form>
+    </div>
+  </body>
+</html>
