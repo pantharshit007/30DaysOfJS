@@ -26,8 +26,8 @@ const usernameDisplay = document.getElementById('username-display');
 const chatBox = document.getElementById('chat-box');
 let username = '';
 
-function setUsername(name) {
-    usernameDisplay.textContent = `Logged in as: ${name || 'Anonymous'}`;
+function setUsername() {
+    usernameDisplay.textContent = `Logged in as: ${username}`;
 }
 
 ws.onopen = () => {
@@ -86,8 +86,8 @@ function sendMessage(eve) {
         username = prompt("Please enter a username");
         setUsername();
     }
-    username = username || 'Anonymous';
     if (input.value.trim() !== '') {
+        username = username || 'Anonymous';
         const message = input.value;
         displaySentMessage(message, username);
         const sentMessage = JSON.stringify({ type: 'incoming', message, username });
