@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
 
         const username = usernameElem.value;
+        let email = document.getElementById('signup-email').value;
         const password = passwordElem.value;
         const confirmPass = confirmPassElem.value;
 
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (userExists) {
             alert('Username already exists. Please choose another one.');
         } else {
-            users.push({ username: username, password: password });
+            users.push({ username: username, password: password, email: email });
             localStorage.setItem('users', JSON.stringify(users));
             sessionStorage.setItem('loggedInUser', username);
             alert('Sign up successful!');

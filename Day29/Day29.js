@@ -1,28 +1,3 @@
-// Day 29: https://courses.chaicode.com/learn/home/30-days-of-Javascript-challenge/30-days-javascript-challenge/section/515627/lesson/3197513
-
-// Activity 1: Setting Up the Project
-// • Task 1: Initialize a new project directory and set up the basic HTML structure for the social media dashboard.
-// • Task 2: Add a basic CSS file to style the social media dashboard, including a container for posts and a form for creating new posts.
-//     Activity 2: User Authentication
-// • Task 3: Create a simple login form that collects a username and password.Style the form using CSS.
-// • Task 4:
-// Write a script to handle user login and store the logged -in user's information in localStorage or sessionStorage.
-// Activity 3: Creating Posts
-// • Task 5: Add a form to the HTML structure with fields for entering post details(e.g., text, image).Style the form using CSS.
-// • Task 6.
-// • Write a script to handle form submission, creating a new post object and adding it to an array of posts.Display the new post in the feed.
-//     Activity 4: Displaying Posts
-// • Task 7: Write a function to iterate over the array of posts and display each post in the feed.Include post details like text, image, username, and timestamp.
-// • Task 8: Style the post feed using CSS to make it visually appealing.
-//     Activity 5:
-// Post Interactions
-// • Task 9: Add "Like" and "Comment" buttons to each post.Write functions to handle liking a post and adding comments to a post.
-// • Task IO: Display the number of likes and comments for each post.Update the display when users interact with the posts.
-//     Activity 6: Enhancing the Ul
-// • Task 1 1: Add CSS styles to differentiate posts by different users.Display the logged -in user's posts with a distinct style.
-// • Task 12: Add CSS animations or transitions to make the social media dashboard more interactive and visually appealing.
-// 4
-
 document.addEventListener('DOMContentLoaded', function () {
     const username = sessionStorage.getItem('loggedInUser') || 'Guest';
     document.getElementById('username-placeholder').textContent = username;
@@ -35,11 +10,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const cancelPostButton = document.getElementById('cancelPost');
 
     postButton.addEventListener('click', function () {
-        postFormContainer.classList.remove('hidden');
+        postFormContainer.classList.remove('hiddenn');
     });
 
     cancelPostButton.addEventListener('click', function () {
-        postFormContainer.classList.add('hidden');
+        postFormContainer.classList.add('hiddenn');
         document.getElementById('postForm').reset();
     });
 
@@ -54,7 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
             username: username,
             text: postText,
             image: null,
-            likes: 0
+            likes: 0,
+            comments: [] // Add an empty array to store comments
         };
 
         if (postImage) {
@@ -75,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('posts', JSON.stringify(posts));
         displayPosts(posts);
         document.getElementById('postForm').reset();
-        postFormContainer.classList.add('hidden');
+        postFormContainer.classList.add('hiddenn');
     }
 
     function displayPosts(posts) {
@@ -115,6 +91,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
             postElement.appendChild(likeButton);
 
+            // Add comments section
+            const commentsContainer = document.createElement('div');
+            commentsContainer.className = 'comments-container';
+
+            post.comments.forEach(comment => {
+                const commentElement = document.createElement('div');
+                commentElement.className = 'comment';
+                commentElement.textContent = `${comment.username}: ${comment.text}`;
+                commentsContainer.appendChild(commentElement);
+            });
+
+            const commentForm = document.createElement('form');
+            commentForm.className = 'comment-form';
+            commentForm.innerHTML = `
+                <textarea placeholder="Add a comment" rows="2" required></textarea>
+                <button type="submit">Comment</button>
+            `;
+
+            commentForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const commentText = commentForm.querySelector('textarea').value;
+
+                const newComment = {
+                    username: username,
+                    text: commentText
+                };
+
+                post.comments.push(newComment);
+                localStorage.setItem('posts', JSON.stringify(posts));
+                displayPosts(posts);
+            });
+
+            postElement.appendChild(commentsContainer);
+            postElement.appendChild(commentForm);
             postsContainer.appendChild(postElement);
         });
     }
@@ -145,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function () {
         logoutButton.addEventListener('click', function () {
             if (confirm('Are you sure you want to logout?')) {
                 sessionStorage.removeItem('loggedInUser');
-                window.location.href = '../index.html'; // Adjust path if necessary
+                window.location.href = './login.html';
             }
         });
     } else {
@@ -156,17 +166,18 @@ document.addEventListener('DOMContentLoaded', function () {
     if (deleteAccountButton) {
         deleteAccountButton.addEventListener('click', function () {
             if (confirm('Are you sure you want to delete your account? This action cannot be undone.')) {
-                // Clear session and local storage
                 sessionStorage.removeItem('loggedInUser');
                 localStorage.removeItem('posts');
-
-                // You might also want to remove user-specific data from a server here
-
-                // Redirect to login page or a confirmation page
-                window.location.href = '../index.html'; // Adjust path if necessary
+                window.location.href = '../index.html';
             }
         });
     } else {
         console.error('Delete Account button not found');
     }
+
 });
+
+function profile() {
+    console.log('Profile button clicked');
+    window.location.href = '../Day30/index.html';
+}

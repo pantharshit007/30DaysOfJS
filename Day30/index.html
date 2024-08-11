@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="Day30.js" defer></script>
+    <title>Day 30</title>
+  </head>
+  <body>
+    <div
+      id="profile-modal"
+      class="modal bg-slate-500 w-full h-screen flex flex-col py-4"
+    >
+      <h2
+        class="mx-auto text-3xl font-semibold underline italic text-slate-200"
+      >
+        User Profile
+      </h2>
+      <div class="bg-slate-400 mt-6 mx-auto rounded-md py-3 px-7">
+        <div id="profile-info">
+          <p class="text-xl font-medium">
+            Username:
+            <span id="profile-username" class="text-indigo-700"></span>
+          </p>
+          <p class="text-xl font-medium">
+            Email: <span id="profile-email" class="text-indigo-700"></span>
+          </p>
+        </div>
+        <div id="edit-profile-form" class="hiddenn flex flex-col gap-2 mt-3">
+          <input
+            type="text"
+            id="edit-username"
+            placeholder="New Username"
+            aria-label="Edit Username"
+            class="rounded-sm py-1 px-2"
+          />
+          <input
+            type="email"
+            id="edit-email"
+            placeholder="New Email"
+            aria-label="Edit Email"
+            class="rounded-sm py-1 px-2"
+          />
+        </div>
+
+        <button
+          id="edit-profile-button"
+          class="bg-indigo-600 py-1 px-2 rounded-md mt-5 text-slate-200"
+        >
+          Edit Profile
+        </button>
+        <button
+          id="save-profile-button"
+          class="hiddenn bg-indigo-600 py-1 px-2 rounded-md mt-5 text-slate-200"
+        >
+          Save Changes
+        </button>
+        <button
+          id="close-profile-modal"
+          aria-label="Close Profile Modal"
+          class="bg-slate-300 py-1 px-2 rounded-md mt-5"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

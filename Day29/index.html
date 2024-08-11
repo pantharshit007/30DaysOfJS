@@ -16,14 +16,21 @@
     <div class="dashboard-container">
       <h1>Welcome, <span id="username-placeholder">Guest</span>!</h1>
       <div class="buttons-container">
-        <button class="logout-button">Logout</button>
-        <button class="delete-account-button">Delete Account</button>
+        <button class="logout-button px-2 py-1">Logout</button>
+        <button class="delete-account-button px-2 py-1">Delete Account</button>
+      </div>
+      <div class="absolute text-slate-300 inline flex gap-x-3 items-center">
+        <button
+          class="rounded-full w-[35px] h-[35px] bg-slate-200"
+          onclick="profile()"
+        ></button>
+        <p>Profile</p>
       </div>
 
       <div id="posts-container"></div>
 
       <!-- Post Creation Form (Hidden by default) -->
-      <div id="post-form-container" class="post-form-container hidden">
+      <div id="post-form-container" class="post-form-container hiddenn">
         <h2>Create a Post</h2>
         <form id="postForm">
           <textarea
@@ -43,7 +50,7 @@
     </div>
 
     <!-- Comment Form (Hidden by default) -->
-    <div id="comment-form-container" class="comment-form-container hidden">
+    <div id="comment-form-container" class="comment-form-container hiddenn">
       <h2>Add a Comment</h2>
       <form id="commentForm">
         <textarea

@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #32395b;
     margin: 0;
 }
 
@@ -194,7 +194,7 @@ button {
     background-color: #1655c0;
 }
 
-.hidden {
+.hiddenn {
     display: none;
 }
 
@@ -210,4 +210,9 @@ button {
 
 .like-button.liked i {
     color: #ff0000;
+}
+
+.comment {
+    font-style: italic;
+    font-weight: 500;
 }

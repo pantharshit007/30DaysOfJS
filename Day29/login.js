@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (user) {
             sessionStorage.setItem('loggedInUser', username);
+            sessionStorage.setItem('userEmail', user.email);
             alert('Login successful!');
             window.location.href = './index.html';
         } else {
